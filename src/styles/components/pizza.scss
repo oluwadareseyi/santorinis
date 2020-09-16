@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: -8%;
+    bottom: -10%;
 
     .pizza-container {
         position: absolute;
@@ -33,6 +33,7 @@
             top: 17%;
             background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600272238/Santorinis/Group_10_odhq7c.svg");
             background-size: cover;
+            background-position: 50% 0;
 
             .dough-items {
                 position: absolute;

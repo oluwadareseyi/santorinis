@@ -2,7 +2,7 @@ import React from 'react';
 
 const Toppings = () => {
     return (
-        <div>
+        <div className="toppings">
             
         </div>
     );
