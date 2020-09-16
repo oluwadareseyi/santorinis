@@ -1,2 +1,11 @@
 @import './breakpoints.scss';
 @import './variables.scss';
+@import './pages/home.scss';
+@import './components/pizza.scss';
+
+
+
+.pages {
+    max-width: 1440px;
+    margin: 0 auto;
+}

@@ -1,0 +1,188 @@
+.landing {
+    height: 110vh;
+    background-color: #191F2C;
+    background-image: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600182412/Santorinis/texture_y14rfh.png");
+    background-size: contain;
+    background-position: 50% 50%;
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+
+        .ingredients {
+            .ing {
+                position: absolute;
+
+            }
+
+
+            .ing-1 {
+                background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600210305/Santorinis/pngfuel_4_vq9fsg.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                right: -30px;
+                top: 0;
+                width: 20vw;
+                height: 20vw;
+            }
+
+            .ing-2 {
+                background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600210306/Santorinis/veg_xezj2i.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                top: 35vh;
+                left: 0;
+                width: 22vw;
+                height: 22vw;
+            }
+
+            .ing-3 {
+                background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600210304/Santorinis/veg2_zamvxs.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                right: 0;
+                bottom: -20px;
+                width: 15vw;
+                height: 15vw;
+            }
+
+            .ing-4 {
+                background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600210303/Santorinis/pepper_iauiex.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                left: 17vw;
+                top: 19%;
+                width: 9vw;
+                height: 9vw;
+                animation: float-horizontal 10s 1s ease-in-out infinite;
+            }
+
+            .ing-5 {
+                background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600210305/Santorinis/tomatoes_zvcimp.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                right: 6vw;
+                top: 40%;
+                width: 12vw;
+                height: 12vw;
+                animation: float 10s ease-in-out infinite;
+            }
+        }
+
+        .main-nav {
+            padding: 35px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+
+            .logo {
+                font-family: $bordoni;
+                color: #ffffff;
+                font-size: 19px;
+                letter-spacing: 0.05em;
+            }
+
+            .nav-items {
+                color: $white;
+                display: flex;
+                font-size: 15px;
+
+                .nav-item {
+                    cursor: pointer;
+                    transition: color .3s ease-in;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: $yellow;
+                    }
+
+                    &:not(:last-of-type) {
+                        margin-right: 25px;
+                    }
+                }
+            }
+
+            .cart-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: $yellow;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                margin-right: 30px;
+
+                svg {
+                    width: 60%;
+                }
+            }
+        }
+
+        .size-title {
+            color: $white;
+            font-weight: 500;
+            font-size: 17px;
+            margin-top: 70px;
+            margin-bottom: 25px;
+        }
+
+        .sizing,
+        .size-title {
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+
+            .size {
+                width: 30px;
+                height: 30px;
+                padding: 5px;
+                color: $white;
+                padding: 5px;
+                border-radius: 50%;
+                border: 2px solid $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                font-size: 18px;
+
+                &:not(:last-of-type) {
+                    margin-right: 22px;
+                }
+            }
+
+            .active {
+                background: $white;
+                color: $black;
+            }
+        }
+    }
+}
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, 20px, 0);
+    }
+}
+
+@keyframes float-horizontal {
+
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(20px, 0, 0);
+    }
+}
