@@ -1,5 +1,5 @@
 .landing {
-    height: 110vh;
+    height: 120vh;
     background-color: #191F2C;
     background-image: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600182412/Santorinis/texture_y14rfh.png");
     background-size: contain;
@@ -183,6 +183,6 @@
     }
 
     50% {
-        transform: translate3d(20px, 0, 0);
+        transform: translate3d(-20px, 0, 0);
     }
 }

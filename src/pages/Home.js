@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as Cart } from "../assets/images/cart.svg";
+import Pizza from "../components/Pizza";
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
           <div className="size">L</div>
         </div>
 
-        <div className="pizza-container"></div>
+        <Pizza />
         <div className="ingredients">
           <div className="ing ing-1"></div>
           <div className="ing ing-2"></div>
