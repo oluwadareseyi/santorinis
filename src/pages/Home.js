@@ -24,6 +24,8 @@ const Home = () => {
           <div className="size active">M</div>
           <div className="size">L</div>
         </div>
+
+        <div className="pizza-container"></div>
         <div className="ingredients">
           <div className="ing ing-1"></div>
           <div className="ing ing-2"></div>
