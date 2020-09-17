@@ -4,7 +4,7 @@ const DoughItem = ({ name, img, id }) => {
   return (
     <div
       key={name}
-      className="item"
+      className={`item ${name}`}
       style={{ backgroundImage: `url(${img})` }}
     ></div>
   );

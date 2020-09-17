@@ -7,56 +7,56 @@ const toppingsArr = [
   {
     id: 1,
     img:
-      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600282622/Santorinis/pepperoni_av3xgp.png",
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600383211/Santorinis/black-olive-topping-trottos_bb5euz.png",
     name: "olives",
     dragged: false,
   },
   {
     id: 2,
     img:
-      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600282622/Santorinis/pepperoni_av3xgp.png",
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600383214/Santorinis/pepperoni_1_wtqng9.png",
     name: "cheese",
     dragged: false,
   },
   {
     id: 3,
     img:
-      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600282622/Santorinis/pepperoni_av3xgp.png",
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600383211/Santorinis/red-peppers_1_lgavff.png",
     name: "pepper",
     dragged: false,
   },
   {
     id: 4,
     img:
-      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600282622/Santorinis/pepperoni_av3xgp.png",
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600383214/Santorinis/pepperoni_1_wtqng9.png",
     name: "pepperoni",
     dragged: false,
   },
   {
     id: 5,
     img:
-      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600294730/Santorinis/bacon_zjpqid.png",
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600383213/Santorinis/bacon_1_xozcou.png",
     name: "bacon",
     dragged: false,
   },
   {
     id: 6,
     img:
-      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600282622/Santorinis/pepperoni_av3xgp.png",
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600383214/Santorinis/pepperoni_1_wtqng9.png",
     name: "chicken",
     dragged: false,
   },
   {
     id: 7,
     img:
-      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600282622/Santorinis/pepperoni_av3xgp.png",
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600383214/Santorinis/pepperoni_1_wtqng9.png",
     name: "beef",
     dragged: false,
   },
   {
     id: 8,
     img:
-      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600282622/Santorinis/pepperoni_av3xgp.png",
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600383214/Santorinis/pepperoni_1_wtqng9.png",
     name: "sausage",
     dragged: false,
   },

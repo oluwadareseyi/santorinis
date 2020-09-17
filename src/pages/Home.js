@@ -103,10 +103,16 @@ const Home = () => {
       <section className="image-grid">
         <div className="parent-grid">
           <div className="desc">
-            <div className="caption">
-              Follow Us On Instagram To See Pictures Taken By Our Customers
+            <div className="inner">
+              <div className="caption">
+                Follow Us On Instagram To See Pictures <br /> Taken By Our
+                Customers
+              </div>
+              <div className="link-ig">
+                <i class="fab fa-instagram"></i>
+                <div> : @santorins</div>
+              </div>
             </div>
-            <div className="link-ig"></div>
           </div>
           <div className="grid"></div>
           <div className="grid"></div>
@@ -116,6 +122,7 @@ const Home = () => {
           <div className="grid"></div>
         </div>
       </section>
+      <footer></footer>
     </div>
   );
 };

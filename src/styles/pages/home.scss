@@ -431,6 +431,7 @@
         .grid {
             height: 300px;
             background-image: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600379958/Santorinis/showcase_o45e8u.jpg");
+            background-size: contain;
         }
 
         .desc {
@@ -441,7 +442,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .inner {
+                background: $yellow;
+                border-radius: 15px;
+                padding: 25px 40px;
+                text-align: center;
+                color: $white;
+                font-size: 19px;
+                line-height: 1.5;
+
+                .link-ig {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .fab {
+                        margin-top: 2px;
+                        margin-right: 5px;
+                    }
+                }
+            }
         }
+    }
+
+    footer {
+        padding: 30px 90px;
     }
 }
 

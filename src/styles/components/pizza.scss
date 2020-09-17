@@ -14,8 +14,12 @@
         .topping {
             position: absolute;
             opacity: 1;
-            transition: opacity .5s linear;
             z-index: 5;
+            width: 200px;
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: opacity .1s linear;
         }
 
         .dragging {
@@ -24,7 +28,7 @@
 
         .olives {
             left: 8vw;
-            top: 33%;
+            top: 35%;
         }
 
         .cheese {
@@ -33,8 +37,9 @@
         }
 
         .pepper {
-            left: 23vw;
-            top: -.7vw;
+            left: 25vw;
+            top: -1.7vw;
+            width: 140px;
         }
 
         .pepperoni {
@@ -43,8 +48,9 @@
         }
 
         .bacon {
-            right: 32vw;
-            top: -5vw;
+            right: 35vw;
+            top: -5.7vw;
+            width: 130px;
         }
 
         .chicken {
@@ -111,7 +117,20 @@
                     background-size: cover;
                     background-repeat: no-repeat;
                     z-index: 1;
-                    background-position: 50% 10%;
+                    background-position: 50% 30%;
+                    top: 30px;
+                }
+
+                .bacon {
+                    top: 50px;
+                }
+
+                .olives {
+                    left: -10px;
+                }
+
+                .pepper {
+                    left: 25px;
                 }
             }
         }

@@ -16,10 +16,9 @@ const Toppings = ({ name, img, id }) => {
     <div
       ref={drag}
       key={name}
+      style={{ backgroundImage: `url(${img})` }}
       className={`topping ${name} ${isDragging ? "dragging" : ""}`}
-    >
-      <img src={img} alt={name} />
-    </div>
+    ></div>
   );
 };
 
