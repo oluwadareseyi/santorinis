@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Dough from "./Dough";
+import DoughItem from "./DoughItem";
 import Toppings from "./Toppings";
 
 const toppingsArr = [
@@ -34,7 +35,7 @@ const toppingsArr = [
   {
     id: 5,
     img:
-      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600282622/Santorinis/pepperoni_av3xgp.png",
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600294730/Santorinis/bacon_zjpqid.png",
     name: "bacon",
     dragged: false,
   },
@@ -81,15 +82,13 @@ const Pizza = () => {
       <div className="pizza-container">
         <div className="toppings-title"></div>
 
-        <div className="dough-container">
-          <div className="dough-items">
-            {toppings
-              .filter((topping) => topping.dragged)
-              .map(({ img, name, id }) => (
-                <Dough key={id} name={name} img={img} id={id} />
-              ))}
-          </div>
-        </div>
+        <Dough done={markDragged}>
+          {toppings
+            .filter((topping) => topping.dragged)
+            .map(({ img, name, id }) => (
+              <DoughItem key={id} img={img} name={name} id={id} />
+            ))}
+        </Dough>
       </div>
     </div>
   );

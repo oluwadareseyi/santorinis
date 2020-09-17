@@ -14,6 +14,12 @@
 
         .topping {
             position: absolute;
+            opacity: 1;
+            transition: opacity .5s linear;
+        }
+
+        .dragging {
+            opacity: 0;
         }
 
         .olives {
@@ -87,16 +93,18 @@
             background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600272238/Santorinis/Group_10_odhq7c.svg");
             background-size: cover;
             background-position: 50% 0;
+            transform: scale(1);
+            transition: transform .4s ease-in;
+            z-index: 1;
 
             .dough-items {
                 position: absolute;
-                display: flex;
-                justify-content: center;
-                width: 120%;
+                width: 90%;
                 height: 100%;
 
                 .item {
                     display: flex;
+                    position: absolute;
                     justify-content: center;
                     width: 100%;
                     height: 100%;
@@ -105,6 +113,12 @@
                     background-position: 50% 50%;
                 }
             }
+        }
+
+        .scale-dough {
+            transform: scale(1.05);
+            transform-origin: center center;
+            opacity: .8;
         }
     }
 }
