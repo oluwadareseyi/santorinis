@@ -1,13 +1,11 @@
 import React from "react";
-const Dough = () => {
+const Dough = ({ name, img, id }) => {
   return (
-    <div className="pizza-container">
-      <div className="toppings-title"></div>
-
-      <div className="dough-container">
-        <div className="dough-items"></div>
-      </div>
-    </div>
+    <div
+      key={name}
+      className="item"
+      style={{ backgroundImage: `url(${img})` }}
+    ></div>
   );
 };
 

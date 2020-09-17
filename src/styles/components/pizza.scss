@@ -2,7 +2,60 @@
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: -10%;
+    bottom: -15%;
+    width: 100%;
+    height: 100%;
+
+    .toppings {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+
+        .topping {
+            position: absolute;
+        }
+
+        .olives {
+            left: 8vw;
+            top: 33%;
+        }
+
+        .cheese {
+            left: 13.5vw;
+            top: 13.5%;
+        }
+
+        .pepper {
+            left: 23vw;
+            top: -.7vw;
+        }
+
+        .pepperoni {
+            left: 36vw;
+            top: -5.5vw;
+        }
+
+        .bacon {
+            right: 32vw;
+            top: -5vw;
+        }
+
+        .chicken {
+            right: 20.5vw;
+            top: 0vw;
+        }
+
+        .beef {
+            right: 12.5vw;
+            top: 14.4%;
+        }
+
+        .sausage {
+            right: 7.5vw;
+            top: 33.5%;
+        }
+    }
 
     .pizza-container {
         position: absolute;
@@ -37,6 +90,20 @@
 
             .dough-items {
                 position: absolute;
+                display: flex;
+                justify-content: center;
+                width: 120%;
+                height: 100%;
+
+                .item {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    z-index: 1;
+                    background-position: 50% 50%;
+                }
             }
         }
     }

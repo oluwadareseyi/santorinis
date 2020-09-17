@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const Toppings = () => {
-    return (
-        <div className="toppings">
-            
-        </div>
-    );
+const Toppings = ({ name, img, id }) => {
+  return (
+    <div key={name} className={`topping ${name}`}>
+      <img src={img} alt={name} />
+    </div>
+  );
 };
 
 export default Toppings;
