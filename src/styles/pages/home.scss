@@ -1,9 +1,19 @@
+@mixin button {
+    padding: 15px 35px;
+    cursor: pointer;
+    flex: 0 0 auto;
+    background: #191F2C;
+    border-radius: 74px;
+    color: $white;
+}
+
 .landing {
     height: 120vh;
     background-color: #191F2C;
     background-image: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600182412/Santorinis/texture_y14rfh.png");
     background-size: contain;
     background-position: 50% 50%;
+    font-weight: 500;
 
     .hero {
         position: relative;
@@ -15,7 +25,6 @@
                 position: absolute;
 
             }
-
 
             .ing-1 {
                 background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600210305/Santorinis/pngfuel_4_vq9fsg.png");
@@ -108,15 +117,19 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border-radius: 50%;
-                background: $yellow;
                 width: 20px;
                 height: 20px;
                 padding: 5px;
+                border-radius: 50%;
+                background: $yellow;
                 margin-right: 30px;
 
                 svg {
                     width: 60%;
+
+                    path {
+                        fill: $white;
+                    }
                 }
             }
         }
@@ -160,6 +173,276 @@
             }
         }
     }
+
+    .recipes {
+        padding: 100px 0;
+        padding-top: 150px;
+
+        .title {
+            text-align: center;
+            font-size: 2.6em;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+
+            .tab {
+                background: #ECEEF6;
+                // padding: 15px 33px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 40px;
+                width: 120px;
+                height: 50px;
+                cursor: pointer;
+
+                &:not(:last-of-type) {
+                    margin-right: 30px;
+                }
+            }
+
+            .tab.active {
+                background: $yellow;
+                color: $white;
+            }
+        }
+
+        .all-pizza {
+            display: flex;
+            overflow: auto;
+            overflow-y: hidden;
+            padding: 80px 0;
+            padding-left: 10px;
+            flex-wrap: nowrap;
+            gap: 20px;
+            overflow-anchor: none;
+
+            &:hover {
+                &::-webkit-scrollbar-thumb {
+                    background-color: #DEDEDE;
+                }
+            }
+
+            &::-webkit-scrollbar {
+                background-color: $white;
+                height: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: transparent;
+                border-radius: 40px;
+                transition: background-color .5s ease-in;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background-color: #DEDEDE;
+            }
+
+            &::-webkit-scrollbar-thumb:active {
+                background-color: #DEDEDE;
+            }
+
+            &::-webkit-scrollbar-corner {
+                background-color: $white;
+            }
+
+
+
+
+            .one-pizza {
+                flex: 0 0 auto;
+                border: 2px solid #ECEEF7;
+                box-sizing: border-box;
+                border-radius: 15px;
+                width: 230px;
+                position: relative;
+                background-color: $white;
+                height: 100%;
+
+                &:last-of-type {
+                    margin-right: 50px;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    $size: 40px;
+                    width: $size;
+                    height: $size;
+                    margin-left: -#{$size/2};
+                    margin-top: -#{$size/2};
+                    border-top: 0;
+                    border-right: 2px solid #ECEEF7;
+                    border-bottom: 2px solid #ECEEF7;
+                    border-left: 0;
+                    left: 50%;
+                    top: 100%;
+                    transform: rotate(45deg);
+                    background-color: $white;
+                    border-radius: 2px;
+                    border-bottom-right-radius: 18px;
+                }
+
+                .top {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: 200px;
+
+                    .image {
+                        background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600353573/Santorinis/image_26_vwvrfp.png");
+                        background-size: contain;
+                        width: 70%;
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        filter: drop-shadow(20px 10px 20px rgba(143, 92, 32, 0.1));
+                    }
+                }
+
+                .bottom {
+                    padding: 20px;
+                    padding-bottom: 30px;
+                    font-size: 12px;
+                    position: relative;
+                }
+
+                .details {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+
+                    .pizza-name {
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                }
+
+                .price {
+                    text-align: center;
+                    margin-top: 20px;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+
+                .cart-button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20px;
+                    height: 20px;
+                    padding: 3px;
+                    border: 2px solid #ECEEF7;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -11.5px;
+                    bottom: -12px;
+                    z-index: 1;
+                    cursor: pointer;
+
+                    svg {
+                        width: 60%;
+
+                        path {
+                            fill: $black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .all-recipes {
+            display: flex;
+            padding-right: 8vw;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .line {
+            flex: 1;
+            height: 2px;
+            background: #121146;
+        }
+
+        .button {
+            @include button;
+        }
+    }
+
+    .about-us {
+        padding: 90px 80px;
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .left {
+            flex: 1;
+
+            .title {
+                color: #F6B716;
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            .sub {
+                text-align: justify;
+                font-weight: 600;
+                line-height: 2;
+                margin-bottom: 60px;
+            }
+
+            .button {
+                @include button;
+                display: inline;
+            }
+        }
+
+        .right {
+            flex: 1.1;
+            height: 100%;
+            animation: float 5s ease-in-out infinite;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .image-grid {
+        padding: 60px 90px;
+
+        .parent-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+        }
+
+
+        .grid {
+            height: 300px;
+            background-image: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600379958/Santorinis/showcase_o45e8u.jpg");
+        }
+
+        .desc {
+            position: absolute;
+            background: rgba(25, 31, 44, 0.49);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 
@@ -171,7 +454,7 @@
     }
 
     50% {
-        transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, -20px, 0);
     }
 }
 
