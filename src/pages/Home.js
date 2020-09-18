@@ -109,7 +109,7 @@ const Home = () => {
                 Customers
               </div>
               <div className="link-ig">
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
                 <div> : @santorins</div>
               </div>
             </div>
@@ -122,7 +122,31 @@ const Home = () => {
           <div className="grid"></div>
         </div>
       </section>
-      <footer></footer>
+      <footer>
+        <div className="footer-top">
+          <div className="left">
+            <div className="logo">SANTORINIS</div>
+            <div className="copyright">
+              Copyright © 2020. LogoIpsum. All rights <br /> reserved.
+            </div>
+          </div>
+          <div className="right">
+            <div className="links">
+              <p>Services</p>
+              <p>Campaigns</p>
+              <p>Branding</p>
+              <p>Offline</p>
+            </div>
+            <div className="links">
+              <p>About</p>
+              <p>Our Story</p>
+              <p>Benefits</p>
+              <p>Careers</p>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom"></div>
+      </footer>
     </div>
   );
 };

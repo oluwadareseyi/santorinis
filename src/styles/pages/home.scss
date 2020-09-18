@@ -468,7 +468,50 @@
     }
 
     footer {
-        padding: 30px 90px;
+        padding: 80px 120px;
+        background: #191F2C;
+        color: $white;
+        font-weight: 300;
+        font-size: 12px;
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                font-family: $bordoni;
+                font-size: 19px;
+                letter-spacing: 0.05em;
+            }
+
+            .left {
+                .logo {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .right {
+                flex: .6;
+                display: flex;
+                align-items: flex-start;
+                gap: 10vw;
+
+                .links {
+
+                    p {
+                        &:first-of-type {
+                            margin-top: 0;
+                            font-size: 14px;
+                        }
+
+                        &:not(:last-of-type) {
+                            margin-bottom: 20px;
+                        }
+
+                    }
+                }
+            }
+        }
     }
 }
 
