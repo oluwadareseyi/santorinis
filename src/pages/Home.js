@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import { ReactComponent as Cart } from "../assets/images/cart.svg";
 import Pizza from "../components/Pizza";
 
 const pizzaArr = [...new Array(10)];
 
 const Home = () => {
+  const cartRef = useRef();
   return (
     <div className="landing">
       <section className="hero">
@@ -16,7 +17,7 @@ const Home = () => {
             <div className="nav-item">Our Menu</div>
             <div className="nav-item">Contact Us</div>
           </div>
-          <div className="cart-button">
+          <div ref={cartRef} className="cart-button">
             <Cart />
           </div>
         </nav>
@@ -28,7 +29,7 @@ const Home = () => {
           <div className="size">L</div>
         </div>
 
-        <Pizza />
+        <Pizza cartRef={cartRef} />
         <div className="ingredients">
           <div className="ing ing-1"></div>
           <div className="ing ing-2"></div>
@@ -145,7 +146,28 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="footer-bottom"></div>
+        <div className="footer-bottom">
+          <div className="left">
+            <form onSubmit={(e) => e.preventDefault()} className="newsletter">
+              <label htmlFor="email">
+                Subscribe to our <br /> newsletter
+              </label>
+              <div className="input-row">
+                <input
+                  type="text"
+                  placeholder="Email address"
+                  name="email"
+                  id="email"
+                />
+                <button type="submit">
+                  <i className="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div className="right"></div>
+        </div>
       </footer>
     </div>
   );

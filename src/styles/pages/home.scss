@@ -1,11 +1,4 @@
-@mixin button {
-    padding: 15px 35px;
-    cursor: pointer;
-    flex: 0 0 auto;
-    background: #191F2C;
-    border-radius: 74px;
-    color: $white;
-}
+
 
 .landing {
     height: 120vh;
@@ -418,7 +411,8 @@
     }
 
     .image-grid {
-        padding: 60px 90px;
+        padding: 90px;
+        padding-bottom: 120px;
 
         .parent-grid {
             display: grid;
@@ -468,15 +462,16 @@
     }
 
     footer {
-        padding: 80px 120px;
+        padding: 80px 150px;
         background: #191F2C;
         color: $white;
         font-weight: 300;
-        font-size: 12px;
+        font-size: 13px;
 
         .footer-top {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 20px;
 
             .logo {
                 font-family: $bordoni;
@@ -494,20 +489,71 @@
                 flex: .6;
                 display: flex;
                 align-items: flex-start;
-                gap: 10vw;
+                gap: 12vw;
 
                 .links {
 
                     p {
                         &:first-of-type {
                             margin-top: 0;
-                            font-size: 14px;
+                            font-size: 15px;
                         }
 
                         &:not(:last-of-type) {
                             margin-bottom: 20px;
                         }
 
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                form {
+                    label {
+                        font-weight: 400;
+                        font-size: 18px;
+                        margin-bottom: 30px;
+                        display: block;
+                    }
+
+                    .input-row {
+                        display: flex;
+                    }
+
+                    input {
+                        border: 0;
+                        border-radius: 0;
+                        box-sizing: border-box;
+                        border-bottom: 1px solid rgba(255, 255, 255, .2);
+                        background: transparent;
+                        outline: none;
+                        box-shadow: none;
+                        text-align: left;
+                        font-size: 14.5px;
+                        width: 100%;
+                        color: #fff;
+                        // padding: .6em .6em .6em 0;
+                        padding: 15px 0;
+                        text-indent: 2px;
+
+                        &::placeholder {
+                            color: rgba(255, 255, 255, .5);
+                            ;
+                        }
+                    }
+
+                    button {
+                        border-radius: 8px 8px 0px 0px;
+                        color: $black;
+                        background: $white;
+                        outline: none;
+                        border: 0;
+                        padding: 0 20px;
                     }
                 }
             }

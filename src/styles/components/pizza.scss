@@ -15,57 +15,58 @@
             position: absolute;
             opacity: 1;
             z-index: 5;
-            width: 200px;
-            height: 200px;
-            background-size: contain;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: 50% 50%;
             background-repeat: no-repeat;
             transition: opacity .1s linear;
         }
 
         .dragging {
-            opacity: 0;
+            opacity: 0.6;
         }
 
         .olives {
-            left: 8vw;
-            top: 35%;
+            left: 11vw;
+            top: 34%;
         }
 
         .cheese {
-            left: 13.5vw;
-            top: 13.5%;
+            left: 16.5vw;
+            top: 14.5%;
         }
 
         .pepper {
-            left: 25vw;
-            top: -1.7vw;
-            width: 140px;
+            left: 24.5vw;
+            top: 0vw;
+            width: 135px;
         }
 
         .pepperoni {
-            left: 36vw;
+            left: 40vw;
             top: -5.5vw;
         }
 
         .bacon {
-            right: 35vw;
-            top: -5.7vw;
-            width: 130px;
+            right: 35.2vw;
+            top: -4.5vw;
+            width: 127px;
         }
 
         .chicken {
-            right: 20.5vw;
-            top: 0vw;
+            right: 24vw;
+            top: .5vw;
         }
 
         .beef {
-            right: 12.5vw;
-            top: 14.4%;
+            right: 15.5vw;
+            top: 16%;
         }
 
         .sausage {
-            right: 7.5vw;
-            top: 33.5%;
+            right: 11vw;
+            top: 35%;
         }
     }
 
@@ -89,7 +90,7 @@
             justify-content: center;
         }
 
-        .dough-container {
+        .dough-component {
             position: absolute;
             display: flex;
             justify-content: center;
@@ -98,15 +99,27 @@
             top: 17%;
             background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600272238/Santorinis/Group_10_odhq7c.svg");
             background-size: cover;
+            background-repeat: no-repeat;
             background-position: 50% 0;
             transform: scale(1);
+            // transform: scale(.1) translate3d(4200px, -6630px, 0px);
             transition: transform .4s ease-in;
             z-index: 1;
+        }
+
+        .dough-container {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            width: 85%;
+            height: 100%;
 
             .dough-items {
                 position: absolute;
                 width: 100%;
                 height: 100%;
+                display: flex;
+                justify-content: center;
 
                 .item {
                     display: flex;
@@ -117,12 +130,13 @@
                     background-size: cover;
                     background-repeat: no-repeat;
                     z-index: 1;
-                    background-position: 50% 30%;
+                    background-position: 50% 50%;
                     top: 30px;
                 }
 
                 .bacon {
                     top: 50px;
+                    left: 10px;
                 }
 
                 .olives {
@@ -130,15 +144,67 @@
                 }
 
                 .pepper {
-                    left: 25px;
+                    left: 30px;
+                    top: 70px;
+                }
+
+
+
+                .cheese,
+                .chicken,
+                .beef {
+                    width: 80%;
+                    background-size: contain;
+                    top: 50px;
                 }
             }
         }
 
         .scale-dough {
-            transform: scale(1.05);
+            transform: scale(1.05) !important;
             transform-origin: center center;
             opacity: .8;
         }
+
+        .drop-anim {
+            animation: moveit 1s ease forwards;
+            will-change: transform;
+        }
+    }
+
+    .order-button {
+        @include button;
+        position: absolute;
+        background: $yellow;
+        // top: 30%;
+        z-index: 10;
+        bottom: 53%;
+    }
+}
+
+
+@keyframes moveit {
+    0% {
+        transform: scale3d(0.96, 0.96, 1);
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+
+    40% {
+        transform: scale3d(0.98, 0.98, 1);
+    }
+
+    60% {
+        transform: scale3d(1.05, 1.05, 1);
+    }
+
+    80% {
+        transform: scale3d(1.01, 1.01, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
     }
 }

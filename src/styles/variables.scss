@@ -8,3 +8,17 @@ $yellow: #F6B716;
 // fonts
 $bordoni: "Bordoni",
 serif;
+
+
+
+// mixins
+
+
+@mixin button {
+    padding: 15px 35px;
+    cursor: pointer;
+    flex: 0 0 auto;
+    background: #191F2C;
+    border-radius: 74px;
+    color: $white;
+}
