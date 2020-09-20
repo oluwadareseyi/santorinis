@@ -2,7 +2,75 @@ import React, { useRef } from "react";
 import { ReactComponent as Cart } from "../assets/images/cart.svg";
 import Pizza from "../components/Pizza";
 
-const pizzaArr = [...new Array(10)];
+const pizzaArr = [
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600633394/Santorinis/image_26_jdceax.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600442997/Santorinis/image_26-2_hpbuc2.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600442998/Santorinis/image_26-3_jsjfrz.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600442997/Santorinis/image_26-4_eh1fwi.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600633394/Santorinis/image_26_jdceax.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600442997/Santorinis/image_26-2_hpbuc2.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600442998/Santorinis/image_26-3_jsjfrz.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600442997/Santorinis/image_26-4_eh1fwi.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600633394/Santorinis/image_26_jdceax.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600442998/Santorinis/image_26-3_jsjfrz.png",
+  },
+];
+
+const aboutArr = [
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600639706/Santorinis/Rectangle_51_eszgc8.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600639703/Santorinis/Rectangle_53_rdyzc1.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600639678/Santorinis/Rectangle_54_gr35hq.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600639673/Santorinis/Rectangle_50_vpeqwy.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600639670/Santorinis/Rectangle_52_q7nudv.png",
+  },
+  {
+    img:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600379958/Santorinis/showcase_o45e8u.jpg",
+  },
+];
 
 const Home = () => {
   const cartRef = useRef();
@@ -51,10 +119,13 @@ const Home = () => {
         </div>
 
         <div className="all-pizza">
-          {pizzaArr.map((_, i) => (
+          {pizzaArr.map(({ img }, i) => (
             <div key={i} className="one-pizza">
               <div className="top">
-                <div className="image"></div>
+                <div
+                  style={{ backgroundImage: `url(${img})` }}
+                  className="image"
+                ></div>
               </div>
               <div className="bottom">
                 <div className="details">
@@ -87,9 +158,7 @@ const Home = () => {
             vivamus sit aliquam in velit volutpat scelerisque at id. Orci cursus
             egestas adipiscing quis id tempus donecc amet. Facilisi malesuada
             curabitur vulputate nulla tortor. vulputate adipiscing diam
-            malesuada proin morbi mattiscc vel. Donec sit sed potenti arcu
-            feugiat. Mattis libero leopni gravida eget purus in aliquet posuere.
-            Scelerisque velocity lobortis posuere libero tincidunt amet.{" "}
+            malesuada proin morbi mattiscc vel.
           </div>
           <div className="button">ORDER NOW</div>
         </div>
@@ -115,12 +184,13 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="grid"></div>
-          <div className="grid"></div>
-          <div className="grid"></div>
-          <div className="grid"></div>
-          <div className="grid"></div>
-          <div className="grid"></div>
+          {aboutArr.map(({ img }, i) => (
+            <div
+              key={i}
+              style={{ backgroundImage: `url(${img})` }}
+              className="grid"
+            ></div>
+          ))}
         </div>
       </section>
       <footer>
