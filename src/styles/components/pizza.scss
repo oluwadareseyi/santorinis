@@ -30,43 +30,83 @@
         .olives {
             left: 11vw;
             top: 34%;
+
+            @include media(">=1300px") {
+                left: 12vw;
+                top: 36.5%;
+            }
         }
 
         .cheese {
             left: 16.5vw;
             top: 14.5%;
+
+            @include media(">=1300px") {
+                left: 17.5vw;
+                top: 16.5%;
+            }
         }
 
         .pepper {
             left: 24.5vw;
-            top: 0vw;
+            top: 0%;
             width: 135px;
+
+            @include media(">=1300px") {
+                left: 26.5vw;
+                top: 1.7%;
+            }
         }
 
         .pepperoni {
             left: 40vw;
             top: -5.5vw;
+
+            @include media(">=1300px") {
+                left: 41vw;
+                top: -4vw;
+            }
         }
 
         .bacon {
             right: 35.2vw;
             top: -4.5vw;
             width: 127px;
+
+            @include media(">=1300px") {
+                right: 36vw;
+                top: -3.5vw;
+            }
         }
 
         .chicken {
             right: 24vw;
             top: .5vw;
+
+            @include media(">=1300px") {
+                right: 25vw;
+                top: 1.8vw;
+            }
         }
 
         .beef {
             right: 15.5vw;
             top: 16%;
+
+            @include media(">=1300px") {
+                right: 17vw;
+                top: 18%
+            }
         }
 
         .sausage {
             right: 11vw;
             top: 35%;
+
+            @include media(">=1300px") {
+                right: 12vw;
+                top: 36%
+            }
         }
     }
 
