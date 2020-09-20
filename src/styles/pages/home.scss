@@ -15,6 +15,10 @@
         height: 850px;
     }
 
+    @include media(">=1500px") {
+        height: 880px;
+    }
+
     .hero {
         position: relative;
         overflow: hidden;
