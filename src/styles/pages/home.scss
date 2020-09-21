@@ -87,7 +87,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 80%;
+
+            @include media(">1300px") {
+                padding: 35px 100px;
+            }
 
             .logo {
                 font-family: $bordoni;
@@ -125,7 +128,7 @@
                 padding: 5px;
                 border-radius: 50%;
                 background: $yellow;
-                margin-right: 30px;
+                margin-right: 100px;
 
                 svg {
                     width: 60%;
@@ -147,7 +150,7 @@
 
         .sizing,
         .size-title {
-            margin-right: 20px;
+            // margin-right: 40px;
             display: flex;
             justify-content: center;
 
@@ -398,7 +401,7 @@
 
             .sub {
                 text-align: left;
-                font-weight: 600;
+                font-weight: 500;
                 line-height: 2;
                 margin-bottom: 60px;
             }
