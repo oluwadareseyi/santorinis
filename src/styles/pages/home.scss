@@ -1,28 +1,33 @@
 .landing {
-    height: 780px;
-    // height: 120vh;
-    background-color: #191F2C;
-    background-image: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600182412/Santorinis/texture_y14rfh.png");
-    background-size: contain;
-    background-position: 50% 50%;
     font-weight: 500;
 
-    @include media(">=1300px") {
-        height: 820px;
-    }
 
-    @include media(">=1400px") {
-        height: 850px;
-    }
-
-    @include media(">=1500px") {
-        height: 880px;
-    }
 
     .hero {
         position: relative;
         overflow: hidden;
-        height: 100%;
+        height: 780px;
+        // height: 120vh;
+        background-color: #191F2C;
+        background-image: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600182412/Santorinis/texture_y14rfh.png");
+        background-size: contain;
+        background-position: 50% 50%;
+
+        @include media(">=1300px") {
+            height: 820px;
+        }
+
+        @include media(">=1400px") {
+            height: 850px;
+        }
+
+        @include media(">=1500px") {
+            height: 880px;
+        }
+
+        @include media("<1100px") {
+            height: 730px;
+        }
 
         .ingredients {
             .ing {

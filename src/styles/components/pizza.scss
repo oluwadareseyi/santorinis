@@ -42,7 +42,7 @@
             }
 
             @include media("<=1100px") {
-                left: 12.5vw;
+                left: 12vw;
                 top: 35%;
             }
         }
@@ -57,8 +57,8 @@
             }
 
             @include media("<=1100px") {
-                left: 18vw;
-                top: 18.5%;
+                left: 17vw;
+                top: 17.5%;
             }
         }
 
@@ -73,10 +73,10 @@
             }
 
             @include media("<=1100px") {
-                left: 26.5vw;
-                top: 4.5%;
-                width: 100px;
-                height: 100px;
+                left: 26vw;
+                top: 4%;
+                width: 90px;
+                height: 90px;
             }
         }
 
@@ -90,8 +90,8 @@
             }
 
             @include media("<=1100px") {
-                left: 41.5vw;
-                top: -.5vw;
+                left: 41vw;
+                top: -2vw;
             }
 
         }
@@ -107,10 +107,10 @@
             }
 
             @include media("<=1100px") {
-                right: 36vw;
-                top: -1.5vw;
-                width: 100px;
-                height: 100px;
+                right: 35vw;
+                top: -2vw;
+                width: 90px;
+                height: 90px;
             }
         }
 
@@ -124,8 +124,8 @@
             }
 
             @include media("<=1100px") {
-                right: 25.5vw;
-                top: 7%;
+                right: 25vw;
+                top: 6%;
             }
         }
 
@@ -139,8 +139,8 @@
             }
 
             @include media("<=1100px") {
-                right: 17vw;
-                top: 20%;
+                right: 16.5vw;
+                top: 19%;
             }
         }
 
@@ -155,7 +155,6 @@
 
             @include media("<=1100px") {
                 right: 12vw;
-                top: 36%;
             }
         }
     }
