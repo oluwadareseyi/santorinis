@@ -31,7 +31,7 @@ function App() {
           </DndProvider>
         </div>
       ) : (
-        <div className="no-laptop">Please, view on a PC or Mac.</div>
+        <div className="no-laptop">Please view on a PC or Mac.</div>
       )}
     </>
   );
