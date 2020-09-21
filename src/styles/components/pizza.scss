@@ -21,6 +21,11 @@
             background-position: 50% 50%;
             background-repeat: no-repeat;
             transition: opacity .1s linear;
+
+            @include media("<=1100px") {
+                width: 70px;
+                height: 70px;
+            }
         }
 
         .dragging {
@@ -35,6 +40,11 @@
                 left: 12vw;
                 top: 36.5%;
             }
+
+            @include media("<=1100px") {
+                left: 12.5vw;
+                top: 35%;
+            }
         }
 
         .cheese {
@@ -44,6 +54,11 @@
             @include media(">=1300px") {
                 left: 17.5vw;
                 top: 16.5%;
+            }
+
+            @include media("<=1100px") {
+                left: 18vw;
+                top: 18.5%;
             }
         }
 
@@ -56,6 +71,13 @@
                 left: 26.5vw;
                 top: 1.7%;
             }
+
+            @include media("<=1100px") {
+                left: 26.5vw;
+                top: 4.5%;
+                width: 100px;
+                height: 100px;
+            }
         }
 
         .pepperoni {
@@ -66,6 +88,12 @@
                 left: 41vw;
                 top: -4vw;
             }
+
+            @include media("<=1100px") {
+                left: 41.5vw;
+                top: -.5vw;
+            }
+
         }
 
         .bacon {
@@ -77,6 +105,13 @@
                 right: 36vw;
                 top: -3.5vw;
             }
+
+            @include media("<=1100px") {
+                right: 36vw;
+                top: -1.5vw;
+                width: 100px;
+                height: 100px;
+            }
         }
 
         .chicken {
@@ -86,6 +121,11 @@
             @include media(">=1300px") {
                 right: 25vw;
                 top: 1.8vw;
+            }
+
+            @include media("<=1100px") {
+                right: 25.5vw;
+                top: 7%;
             }
         }
 
@@ -97,6 +137,11 @@
                 right: 17vw;
                 top: 18%
             }
+
+            @include media("<=1100px") {
+                right: 17vw;
+                top: 20%;
+            }
         }
 
         .sausage {
@@ -106,6 +151,11 @@
             @include media(">=1300px") {
                 right: 12vw;
                 top: 36%
+            }
+
+            @include media("<=1100px") {
+                right: 12vw;
+                top: 36%;
             }
         }
     }

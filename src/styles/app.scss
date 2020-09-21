@@ -9,3 +9,13 @@
     max-width: 1600px;
     margin: 0 auto;
 }
+
+
+.no-laptop {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+    font-weight: 500;
+}

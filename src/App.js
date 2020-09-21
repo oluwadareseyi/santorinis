@@ -10,15 +10,19 @@ const pages = [{ path: "/", pathName: "Home", Component: Home }];
 function App() {
   return (
     <>
-      <div className="pages">
-        <DndProvider backend={HTML5Backend}>
-          {pages.map(({ path, pathName, Component }) => (
-            <Route path={path} exact key={pathName}>
-              <Component />
-            </Route>
-          ))}
-        </DndProvider>
-      </div>
+      {window.innerWidth > 1000 ? (
+        <div className="pages">
+          <DndProvider backend={HTML5Backend}>
+            {pages.map(({ path, pathName, Component }) => (
+              <Route path={path} exact key={pathName}>
+                <Component />
+              </Route>
+            ))}
+          </DndProvider>
+        </div>
+      ) : (
+        <div className="no-laptop">Please, view on a PC or Mac.</div>
+      )}
     </>
   );
 }
