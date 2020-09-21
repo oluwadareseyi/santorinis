@@ -15,7 +15,6 @@ const Dough = forwardRef(({ children, done }, ref) => {
   const [dropAnim, setDropAnim] = useState(false);
 
   useEffect(() => {
-    console.log("rendering...");
     const dropAnimation = () => {
       setDropAnim(true);
       setTimeout(() => {
